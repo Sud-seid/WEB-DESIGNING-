@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(8, 8, 8, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        img{
+        background-color: #e60545;
+       }
+        header h1 {
+            margin: 0;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 10px;
+            border: 2px solid #e60545;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: gray;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons button {
+            background-color: #e60545;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #e60545;
+        }
+
+        .header-buttons button:hover {
+            background-color: #c2043a;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #080808;
+            padding: 20px 0;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+        }
+
+        section:target {
+            display: block;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #080808;
+            padding: 20px 0;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .section-content {
+            display: none;
+        }
+
+        .section-content:target {
+            display: block;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-field input, .form-field textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .form-field textarea {
+            resize: none;
+        }
+
+        .form-btn {
+            background-color:  #e60545;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-btn:hover {
+            background-color:  #c2043a;
+        }
+
+     
+        footer {
+            text-align: center;
+            background-color:  rgba(8, 8, 8);
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="#e60545">
+                <path d="M505 442.7L405.3 343c28.4-35.3 45.7-79.9 45.7-128C451 96.5 354.5 0 231 0S11 96.5 11 215s96.5 215 215 215c48.1 0 92.7-17.3 128-45.7l99.7 99.7c12.5 12.5 32.8 12.5 45.3 0 12.4-12.5 12.4-32.8-.1-45.3zM231 374c-87.2 0-158-70.8-158-158S143.8 58 231 58s158 70.8 158 158-70.8 158-158 158z"/>
+            </svg>
+            </a>
+        </div>
+        <div class="header-buttons">
+            <button>Sign Up</button>
+            <button>Log In</button>
+        </div>
+    </header>
+    <div class="sidebar">
+        <img src="pp.png" alt="Profile Picture" class="profile-picture">
+        <nav>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#story">STORY</a>
+                <a href="#contact">CONTACT US</a>
+            </nav>
+        </nav>
+    </div>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+        <p>I am thrilled to have you here. This platform is designed to provide you with the best content and an excellent user experience. Explore the website to learn more about me, read my story, and get in touch. <br>
+
+            Feel free to navigate through the menu to find everything you need. If you have any questions or feedback, don’t hesitate to contact me. I value your time and hope you have an amazing experience here! <br>
+            
+            Thank you for visiting!</p>
+        </section>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <h5>My Mission:</h5>
+            <p>
+                My mission is to deliver high-quality content and services that meet the needs of my audience. I strive to create a platform where people can connect, learn, and grow..</p>
+                <h5>Who I Am:</h5>
+            <p>
+                I am passionate about providing valuable resources and solutions. Whether you’re here for inspiration, knowledge, or just browsing, I’m here to support you every step of the way.</p>
+        </section>
+        
+        <section id="story">
+            <h1>My Story</h1>
+            <p>Every journey starts with a single step, and mine began with a big dream.</p>
+        
+            <p>
+                From humble beginnings, I set out to create a platform that brings people together, inspires creativity, and provides reliable information. Over the years, I have grown and evolved, but my core values remain the same.
+            </p>
+        
+            <h2>My Milestones</h2>
+            <ul>
+                <li><strong>2024:</strong> The idea for this website was born.</li>
+                <li><strong>2024:</strong> I launched the first version and received incredible support from users.</li>
+                <li><strong>2024:</strong> I expanded my skills and worked hard to improve the platform.</li>
+                <li><strong>2024:</strong> Reached a major milestone with.......</li>
+            </ul>
+        
+            <p>
+                I couldn’t have done this without the encouragement and support of those around me. Thank you for being a part of my story, and I look forward to continuing this journey with you.
+            </p>
+        </section>
+        
+        <section id="contact" class="section-content">
+            <h2>Contact Me</h2>
+            <form action="#" class="contact-form">
+                <div class="form-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <input type="number" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-field">
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
