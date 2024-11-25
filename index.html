@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>WEB ASSIGNMENT</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,15 +14,19 @@
         }
 
         header {
-            background-color: rgba(8, 8, 8, 0.9);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
+        background-color: rgba(8, 8, 8, 0.9);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        z-index: 100; 
+    }
 
         img{
         background-color: #e60545;
@@ -106,7 +110,40 @@
         section {
             display: none;
         }
+        main {
+        margin-left: 200px; 
+        padding: 20px;
+        background-color: #f9f9f9; 
+        min-height: 100vh; 
+    }
 
+    section {
+        margin-top: 120px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        border: 1px solid #e0e0e0;
+    }
+
+    
+    #home h2 {
+        font-size: 28px;
+        color: #e60545; 
+        margin-bottom: 15px;
+    }
+
+    #home p {
+        line-height: 1.6;
+        color: #333;
+        font-size: 16px;
+    }
+
+    
+    section:hover {
+        transform: translateY(-2px); 
+        transition: all 0.3s ease-in-out;
+    }
         section:target {
             display: block;
         }
@@ -128,6 +165,7 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
+            margin-top: 80px;
             margin-bottom: 20px;
         }
 
@@ -150,7 +188,7 @@
             max-width: 600px;
             margin: auto;
         }
-
+  
         .form-field {
             display: flex;
             flex-direction: column;
@@ -222,42 +260,44 @@
     </div>
     <main>
         <section id="home">
-            <h2>Welcome to My Website</h2>
-        <p>I am thrilled to have you here. This platform is designed to provide you with the best content and an excellent user experience. Explore the website to learn more about me, read my story, and get in touch. <br>
-
-            Feel free to navigate through the menu to find everything you need. If you have any questions or feedback, don’t hesitate to contact me. I value your time and hope you have an amazing experience here! <br>
-            
-            Thank you for visiting!</p>
+            <h2>Welcome to My Journey</h2>
+            <p>Hi there! I am Semeriya, a second-year Software Engineering student at Haramaya University. This platform is a space where I share my progress, projects, and experiences as I navigate the fascinating world of technology. <br>
+    
+                Whether you're a fellow student, tech enthusiast, or just curious about my journey, I hope you find something valuable here. Explore my work, learn about my story, and feel free to connect with me. <br>
+    
+                Thank you for stopping by and being part of my adventure!</p>
         </section>
         
         <section id="about">
             <h2>About Me</h2>
             <h5>My Mission:</h5>
             <p>
-                My mission is to deliver high-quality content and services that meet the needs of my audience. I strive to create a platform where people can connect, learn, and grow..</p>
-                <h5>Who I Am:</h5>
+                My mission is to continuously learn, grow, and share knowledge while pursuing excellence in software development. I aim to inspire others to embrace the possibilities of technology and innovation.
+            </p>
+            <h5>Who I Am:</h5>
             <p>
-                I am passionate about providing valuable resources and solutions. Whether you’re here for inspiration, knowledge, or just browsing, I’m here to support you every step of the way.</p>
+                I am a passionate and driven student with a love for solving problems and building meaningful solutions. My journey is fueled by curiosity, dedication, and a desire to contribute to the tech community.
+            </p>
         </section>
         
         <section id="story">
             <h1>My Story</h1>
-            <p>Every journey starts with a single step, and mine began with a big dream.</p>
-        
+            <p>Every great journey begins with a single step, and mine started with a love for technology and an ambition to create impactful solutions.</p>
+    
             <p>
-                From humble beginnings, I set out to create a platform that brings people together, inspires creativity, and provides reliable information. Over the years, I have grown and evolved, but my core values remain the same.
+                From learning fundamental programming at Udacity to tackling real-world projects, I have come a long way. Despite challenges, my passion for coding and continuous improvement keeps me motivated.
             </p>
-        
+    
             <h2>My Milestones</h2>
             <ul>
-                <li><strong>2024:</strong> The idea for this website was born.</li>
-                <li><strong>2024:</strong> I launched the first version and received incredible support from users.</li>
-                <li><strong>2024:</strong> I expanded my skills and worked hard to improve the platform.</li>
-                <li><strong>2024:</strong> Reached a major milestone with.......</li>
+                <li><strong>2023:</strong> Began my Software Engineering journey at Haramaya University.</li>
+                <li><strong>2024:</strong> Completed a certificate in fundamental programming from Udacity.</li>
+                <li><strong>2024:</strong> Built and launched several personal projects, including a mobile health education platform.</li>
+                <li><strong>2024:</strong> Preparing for internships to gain real-world experience in full-stack development.</li>
             </ul>
-        
+    
             <p>
-                I couldn’t have done this without the encouragement and support of those around me. Thank you for being a part of my story, and I look forward to continuing this journey with you.
+                This journey wouldn’t be the same without the support and encouragement of my friends, family, and the tech community. Thank you for being part of my story!
             </p>
         </section>
         
