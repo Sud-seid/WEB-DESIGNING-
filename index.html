@@ -177,6 +177,56 @@
         .section-content {
             display: none;
         }
+        #gallery {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+.gallery-grid img{
+     width: 250px;
+     height: 250px;
+}
 
         .section-content:target {
             display: block;
@@ -252,6 +302,7 @@
             <nav>
                 <a href="#home">HOME</a>
                 <a href="#about">About Me</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#story">STORY</a>
                 <a href="#contact">CONTACT Me</a>
             </nav>
@@ -278,6 +329,28 @@
                 I am a passionate and driven student with a love for solving problems and building meaningful solutions. My journey is fueled by curiosity, dedication, and a desire to contribute to the tech community.
             </p>
         </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cat1.jpg" alt="Gallery picture 1" class="gallery-img">
+                    <p class="gallery-caption">Cute Cat 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="cat2.jpg" alt="Gallery picture 2" class="gallery-img">
+                    <p class="gallery-caption">Cute Cat 2</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="cat3.jpg" alt="Gallery picture 3" class="gallery-img">
+                    <p class="gallery-caption">Cute Cat 3</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="cat4.jpg" alt="Gallery picture 4" class="gallery-img">
+                    <p class="gallery-caption">Cute Cat 4</p>
+                </div>
+            </div>
+        </section>
+        
         
         <section id="story">
             <h1>My Story</h1>
